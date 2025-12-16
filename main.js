@@ -15,8 +15,20 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 
 Buon lavoro! */
 
+//Km da percorrere input
 const numChilometri = parseInt(prompt('Quanti Chilometri vuoi percorrere?'));
 console.log('numChilometri: ', numChilometri);
 
+//Età passeggero input
 const numAgepassenger = parseInt(prompt('Inserisci la tua età'));
 console.log('numAgepassenger: ', numAgepassenger);
+
+//Prezzo per km
+
+const priceForKm = 0.21;
+console.log(priceForKm, typeof priceForKm);
+
+//Calcolo
+
+const priceTicket = numChilometri * priceForKm;
+console.log('priceTicket'10, priceTicket, typeof priceTicket);
