@@ -20,8 +20,8 @@ const numChilometri = parseInt(prompt('Quanti Chilometri vuoi percorrere?'));
 console.log('numChilometri: ', numChilometri);
 
 //Età passeggero input
-const numAgepassenger = parseInt(prompt('Inserisci la tua età'));
-console.log('numAgepassenger: ', numAgepassenger);
+const numAgePassenger = parseInt(prompt('Inserisci la tua età'));
+console.log('numAgepassenger: ', numAgePassenger);
 
 //Prezzo per km
 
@@ -31,4 +31,14 @@ console.log(priceForKm, typeof priceForKm);
 //Calcolo
 
 const priceTicket = numChilometri * priceForKm;
-console.log('priceTicket'10, priceTicket, typeof priceTicket);
+console.log('priceTicket', priceTicket, typeof priceTicket);
+
+//If in base all'età inserita
+
+let outputPrezzo;
+
+//Calcolo se minorenne
+if (numAgePassenger <= 17) {
+  outputPrezzo = priceTicket - priceTicket * 0.2;
+}
+console.log('€ ', outputPrezzo.toFixed(2));
