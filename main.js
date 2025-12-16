@@ -40,5 +40,11 @@ let outputPrezzo;
 //Calcolo se minorenne
 if (numAgePassenger <= 17) {
   outputPrezzo = priceTicket - priceTicket * 0.2;
+  console.log('€ ', outputPrezzo.toFixed(2));
+} /* Calcolo se Over 65 */ else if (numAgePassenger > 65) {
+  outputPrezzo = priceTicket - priceTicket * 0.4;
+  console.log('€ ', outputPrezzo.toFixed(2));
+} /* Se nessuno dei due */ else {
+  outputPrezzo = priceTicket;
+  console.log('€ ', outputPrezzo);
 }
-console.log('€ ', outputPrezzo.toFixed(2));
